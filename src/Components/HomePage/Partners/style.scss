@@ -1,0 +1,112 @@
+.partners-outter-container {
+  background: var(--Lightest-Grey, #fafafa);
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  @media (max-width: 1024px) {
+    margin-top: 40px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 24px;
+  }
+  .partners-container {
+    display: flex;
+    padding: 80px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 1600px;
+    @media (max-width: 1024px) {
+      padding: 40px;
+    }
+    @media (max-width: 768px) {
+      padding: 24px 16px;
+    }
+    .title {
+      color: var(--Neutral-700, #404040);
+      text-align: center;
+      font-family: Inter;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 52px; /* 108.333% */
+      letter-spacing: -2.4px;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+      @media (max-width: 480px) {
+        font-size: 32px;
+      }
+      span {
+        color: #72c420;
+      }
+    }
+    .description {
+      color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+    .partners-list-container {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 24px;
+      justify-content: flex-start;
+      .partner {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.06);
+
+        /* droplogos */
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+        width: calc((100% - 68px) / 4);
+        min-width: 200px;
+        @media (max-width: 1024px) {
+          width: calc((100% - 24px) / 2);
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 180px;
+          height: 37.444px;
+        }
+      }
+      .six-partner {
+        img {
+          width: 291px;
+          height: 56px;
+        }
+      }
+    }
+    button {
+      min-width: 126px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      display: flex;
+      padding: 12px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #2e2e2e;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      &:hover {
+        border: 1px solid var(--Black, #2e2e2e);
+      }
+    }
+  }
+}
