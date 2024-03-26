@@ -1,0 +1,177 @@
+.contacts-container {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  flex-shrink: 0;
+  margin-top: 76px;
+  margin-bottom: 110px;
+  @media (max-width: 1024px) {
+    padding: 24px 16px 48px 16px;
+  }
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    p:first-child {
+      color: var(--Black, #2e2e2e);
+      text-align: center;
+      font-family: Inter;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 52px; /* 108.333% */
+      letter-spacing: -1.92px;
+      span {
+        color: #72c420;
+      }
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+      @media (max-width: 480px) {
+        font-size: 32px;
+      }
+    }
+    p:last-child {
+      color: var(--Black, #2e2e2e);
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+    .contact-btn-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      a {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        border: 1px solid var(--Light-Grey-BG, #f5f5f5);
+        background: var(--Lightest-Grey, #fafafa);
+        &:hover {
+          border: 1px solid var(--Grey-Strokes, #e5e5e5);
+          background: var(--Light-Grey-BG, #f5f5f5);
+        }
+      }
+    }
+  }
+  .contact-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    .contact-card {
+      max-width: 338px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 64px;
+      .contact-card {
+        max-width: none;
+        width: 100%;
+      }
+    }
+    .contact-regular-button {
+      opacity: 1;
+      display: flex;
+      padding: 20px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      transition: 0.2s;
+      color: #72c420;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+
+      svg {
+        fill: #72c420;
+        transition: 0.2s;
+      }
+
+      &:hover {
+        background: #72c420;
+        color: white;
+        transition: 0.2s;
+
+        svg {
+          fill: white;
+          transition: 0.2s;
+        }
+      }
+    }
+    .absolute-button {
+      opacity: 1;
+      margin-top: px;
+      padding: 20px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      color: #5498ee;
+      transition: 0.2s;
+
+      svg {
+        fill: #5498ee;
+        transition: 0.2s;
+      }
+    }
+    .contact-cardContent-container {
+      border-radius: 10px 10px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      /* droplogos */
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+      padding: 32px;
+
+      p {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
+    .contact-image-wrapper {
+      margin-top: -90px;
+
+      display: flex;
+      padding: 24px;
+      align-items: center;
+
+      border-radius: 100px;
+      background: #fff;
+      box-shadow: 0px 6.66667px 12px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+}

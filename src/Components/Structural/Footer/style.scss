@@ -1,0 +1,94 @@
+.footer-container {
+  background: var(--Lightest-Grey, #fafafa);
+  display: flex;
+  padding: 48px 60px 60px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  background-image: url(../../../assets/img/office.png);
+  background-size: 536px 296px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+
+  @media (max-width: 1440px) {
+    background-size: 372px 206px;
+  }
+  @media (max-width: 1024px) {
+    background-position: 100% 30%;
+  }
+  @media (max-width: 768px) {
+    background: #fafafa;
+  }
+  img {
+    width: 114px;
+    height: 46px;
+  }
+  .footer-contents-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    @media (max-width: 1440px) {
+      gap: 24px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    .title {
+      color: var(--Black, #2e2e2e);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 142.857% */
+    }
+    .address-contents {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      p {
+        color: var(--Black, #2e2e2e);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        @media (max-width: 1440px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .company,
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    p {
+      color: var(--Black, #2e2e2e);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 142.857% */
+    }
+    a {
+      color: var(--Black, #2e2e2e);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
+      @media (max-width: 1440px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
