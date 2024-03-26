@@ -15,7 +15,10 @@ export default function Hero() {
     <div className="hero-container">
       <div className="background-img-container">
         <video muted autoPlay={true} loop={true} playsInline>
-          <source src={HeroAnimation} type="video/mp4" />
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/dicalmiami-49715.appspot.com/o/genetiq%2FWhatsApp%20Video%202024-03-26%20at%2009.45.12.mp4?alt=media&token=bca877d5-746c-4958-a0c1-f8ed771ddd80"
+            type="video/mp4"
+          />
         </video>
         <div className="get-started-container">
           <p className="title">
