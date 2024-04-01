@@ -4,20 +4,24 @@
   padding: 0px 60px;
   margin-top: 76px;
   background-color: #fafafa;
+  @media (max-width: 1439px) {
+    margin-top: 72px;
+  }
   @media (max-width: 1024px) {
     padding: 0px 32px;
+    margin-top: 56px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 0px 16px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     padding: 0px 12px;
   }
   .background-img-container {
     height: 800px;
     background: #fbf8fc;
     width: 1320px;
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       width: 1080px;
       height: 612px;
     }
@@ -27,11 +31,11 @@
       display: flex;
       justify-content: center;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 448px;
       height: 255px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 479px) {
       width: 296px;
       height: 167px;
     }
@@ -44,7 +48,7 @@
   .get-started-container {
     display: flex;
     position: absolute;
-    top: 196px;
+    top: 212px;
     left: 88px;
     width: 552px;
     padding: 24px;
@@ -56,25 +60,25 @@
     background: var(--White, #fff);
     box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(2px);
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       left: 0px;
-      top: 113px;
+      top: 132px;
     }
     @media (max-width: 1024px) {
       left: auto;
       right: auto;
-      top: 65%;
+      top: 274px;
       gap: 16px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       left: auto;
       right: auto;
-      top: 90%;
+      top: 230px;
       padding: 12px;
       gap: 12px;
       width: 424px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 479px) {
       left: auto;
       right: auto;
       top: 90%;
@@ -83,42 +87,31 @@
       width: 281px;
     }
     .title {
-      color: #2e2e2e;
-      font-family: Inter;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 72px; /* 112.5% */
-      letter-spacing: -3.2px;
-      @media (max-width: 1024px) {
+      @media (max-width: 1439px) {
+        font-family: Inter;
         font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -2.8px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         font-size: 48px;
         line-height: 56px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: 479px) {
         font-size: 40px;
         line-height: 48px;
       }
-      span {
-        color: #72c420;
-      }
     }
     .description {
-      color: #2e2e2e;
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
       font-weight: 700;
-      line-height: 28px; /* 175% */
-      letter-spacing: -0.32px;
       width: 78%;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         width: 100%;
       }
-      span {
-        color: #72c420;
+      @media (max-width: 479px) {
+        line-height: 24px;
       }
     }
     .button-container {
@@ -126,11 +119,12 @@
       align-items: flex-start;
       gap: 12px;
       width: 100%;
-      @media (max-width: 480px) {
+      @media (max-width: 479px) {
         flex-direction: column;
         .action-button {
           width: -webkit-fill-available;
           justify-content: center;
+          height: 14px;
         }
       }
       .action-button:first-child {
@@ -174,23 +168,12 @@
       }
     }
   }
-  .by-prepaire-white-logo {
-    width: 114px;
-    height: 46px;
-    position: absolute;
-    right: 169px;
-    bottom: 112px;
-    display: block;
-    @media (max-width: 1440px) {
-      display: none;
-    }
-  }
   .by-prepaire-logo {
     width: 114px;
     height: 46px;
     position: absolute;
-    right: 10px;
-    bottom: 60px;
+    right: 60px;
+    bottom: 112px;
     @media (max-width: 1024px) {
       display: none;
     }

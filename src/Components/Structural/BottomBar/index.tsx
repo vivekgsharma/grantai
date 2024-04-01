@@ -31,6 +31,7 @@ export default function BottomBar() {
           <img src={Linkedin} alt="linkedin" />
         </a>
       </div>
+      <h4>Copyright © 2023 Prepaire Labs Inc. All rights reserved.</h4>
       <div className="terms-container">
         <a href="https://app.termly.io/document/terms-of-service/fb3569e8-7a0f-4c89-8a4f-0a9bbbcde184">
           Terms of service
@@ -39,9 +40,6 @@ export default function BottomBar() {
         <a href="https://app.termly.io/document/privacy-policy/c26544c0-fecf-417b-9648-3aa50e9054e0">
           Privacy policy
         </a>
-      </div>
-      <div className="copyright">
-        Copyright © 2023 Prepaire Labs Inc. All rights reserved.
       </div>
     </div>
   );

@@ -28,70 +28,70 @@ export default function Partners() {
   return (
     <div className="partners-outter-container">
       <div className="partners-container">
-        <p className="title">
-          Our <span>Partners</span>
-        </p>
-        <p className="description">
+        <h2 className="title">
+          Our <strong>Partners</strong>
+        </h2>
+        <h4 className="description">
           Our partners are at the forefront of innovation, driving advancements
           that transform healthcare.
-        </p>
+        </h4>
         <div className="partners-list-container">
           <div className="partner">
-            <img src={Partner1} alt="partner" />
+            <img src={Partner1} alt="Google DeepMind" />
           </div>
           <div className="partner">
-            <img src={Partner2} alt="partner" />
+            <img src={Partner2} alt="Harvard University" />
           </div>
           <div className="partner">
-            <img src={Partner3} alt="partner" />
+            <img src={Partner3} alt="Schrodinger" />
           </div>
           <div className="partner">
-            <img src={Partner4} alt="partner" />
+            <img src={Partner4} alt="Elsevier" />
           </div>
           <div className="partner">
-            <img src={Partner5} alt="partner" />
+            <img src={Partner5} alt="RugBank" />
           </div>
           <div className="partner six-partner">
-            <img src={Partner6} alt="partner" />
+            <img src={Partner6} alt="Chemify" />
           </div>
           <div className="partner">
-            <img src={Partner7} alt="partner" />
+            <img src={Partner7} alt="Nvidia" />
           </div>
           <div className="partner">
-            <img src={Partner8} alt="partner" />
+            <img src={Partner8} alt="Cellink" />
           </div>
 
           {showAll && (
             <>
               <div className="partner">
-                <img src={Partner9} alt="partner" />
+                <img src={Partner9} alt="Nanopore" />
               </div>
               <div className="partner">
-                <img src={Partner10} alt="partner" />
+                <img src={Partner10} alt="Unravel" />
               </div>
               <div className="partner">
-                <img src={Partner11} alt="partner" />
+                <img src={Partner11} alt="Cas" />
               </div>
               <div className="partner">
-                <img src={Partner12} alt="partner" />
+                <img src={Partner12} alt="Biobank" />
               </div>
               <div className="partner">
-                <img src={Partner13} alt="partner" />
+                <img src={Partner13} alt="TelesisBio" />
               </div>
               <div className="partner">
-                <img src={Partner14} alt="partner" />
+                <img src={Partner14} alt="Azenta" />
               </div>
               <div className="partner">
-                <img src={Partner15} alt="partner" />
+                <img src={Partner15} alt="Botspot" />
               </div>
               <div className="partner">
-                <img src={Partner16} alt="partner" />
+                <img src={Partner16} alt="Siemens Healthineers" />
               </div>
               <div className="partner">
-                <img src={Partner17} alt="partner" />
+                <img src={Partner17} alt="Motemper" />
               </div>
               <div className="partner">
-                <img src={Partner18} alt="partner" />
+                <img src={Partner18} alt="Emulate" />
               </div>
             </>
           )}

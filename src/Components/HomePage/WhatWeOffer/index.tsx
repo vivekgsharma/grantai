@@ -9,63 +9,64 @@ export default function WhatWeOffer() {
   return (
     <div className="what-we-offer-outter-container">
       <div className="what-we-offer-container">
-        <div className="title">
-          What we <span>offer</span>
-        </div>
+        <h2 className="title">
+          What we <strong>Offer</strong>
+        </h2>
         <div className="services-outter-container">
-          <div className="service-container">
+          <article className="service-container">
             <img src={Service1} alt="service-logo" />
             <div className="contents">
-              <p>
-                Empowered <span>Community Funding</span>
-              </p>
-              <p>
+              <h3>
+                Empowered <strong>Community Funding</strong>
+              </h3>
+              <h4 className="description">
                 GrantAi democratizes access to grant funding for the Prepaire
                 community, empowering researchers, developers, and SMEs to
                 pursue their innovative projects.
-              </p>
+              </h4>
             </div>
-          </div>
-          <div className="service-container">
-            <img src={Service1} alt="service-logo" />
+          </article>
+          <article className="service-container">
+            <img src={Service2} alt="service-logo" />
             <div className="contents">
-              <p>
-                Empowered <span>Community Funding</span>
-              </p>
-              <p>
-                GrantAi democratizes access to grant funding for the Prepaire
-                community, empowering researchers, developers, and SMEs to
-                pursue their innovative projects.
-              </p>
+              <h3>
+                Increased <strong>Success Rate</strong>
+              </h3>
+              <h4 className="description">
+                GrantAi's AI-powered analysis helps identify the most relevant
+                grants and ensures that applications are tailored to specific
+                funding criteria, significantly increasing the likelihood of
+                success
+              </h4>
             </div>
-          </div>
-          <div className="service-container">
+          </article>
+          <article className="service-container">
             <img src={Service3} alt="service-logo" />
             <div className="contents">
-              <p>
-                Enhanced <span>Efficiency</span>
-              </p>
-              <p>
+              <h3>
+                Enhanced <strong>Efficiency</strong>
+              </h3>
+              <h4 className="description">
                 By automating the initial stages of the grant application
                 process, GrantAi saves applicants valuable time and effort,
                 allowing them to focus on the research and development of their
                 projects.
-              </p>
+              </h4>
             </div>
-          </div>
-          <div className="service-container">
+          </article>
+          <article className="service-container">
             <img src={Service4} alt="service-logo" />
             <div className="contents">
-              <p>
-                Seamless <span>Workflow Integration</span>
-              </p>
-              <p>
+              <h3>
+                Seamless <strong>Workflow Integration</strong>
+              </h3>
+              <h4 className="description">
                 GrantAi seamlessly integrates with existing Prepaire
                 applications and services, providing a comprehensive solution
                 for project management and grant applications
-              </p>
+              </h4>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </div>

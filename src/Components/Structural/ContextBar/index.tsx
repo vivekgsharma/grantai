@@ -10,7 +10,7 @@ import Instagram from "assets/svg/instagram.svg";
 import Linkedin from "assets/svg/linkedin.svg";
 import Prepaire from "assets/svg/prepaire.svg";
 import "./style.scss";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function ContextBar() {
   const [showExpanedMenu, setShowExpanedMenu] = useState<boolean>(false);
@@ -42,13 +42,13 @@ export default function ContextBar() {
   };
 
   return (
-    <div className="context-bar" style={{ top: visible ? "0" : "-65px" }}>
+    <nav className="context-bar" style={{ top: visible ? "0" : "-65px" }}>
       <div className="context-bar-inner-container">
         <div className="logo-container" onClick={() => navigate("/")}>
           <div className="logo">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="GrantAi logo" />
           </div>
-          <img src={TextLogo} alt="textlogo" />
+          <img src={TextLogo} alt="GrantAi textlogo" />
         </div>
         <div className="control-btn-group-container">
           <HashLink
@@ -60,28 +60,28 @@ export default function ContextBar() {
           >
             The Platform
           </HashLink>
-          <a
+          <Link
             className={`control-btn ${
               window.location.toString().includes("howitworks") && "active-btn"
             }`}
-            href="/howitworks"
+            to="/howitworks"
           >
-            How It Works
-          </a>
-          <a
+            How it Works
+          </Link>
+          <Link
             className={`control-btn ${
               window.location.toString().includes("contact") && "active-btn"
             }`}
-            href="/contact"
+            to="/contact"
           >
             Contact
-          </a>
+          </Link>
           <a
             href="https://app.prepaire.com:5067/#/login"
             className="control-btn"
           >
-            Login
-            <img src={Enter} alt="enter" />
+            Log in
+            <img src={Enter} alt="Enter icon" />
           </a>
         </div>
         <button type="button" className="menu-btn" onClick={updateExpanedMenu}>
@@ -103,26 +103,28 @@ export default function ContextBar() {
             >
               The Platform
             </HashLink>
-            <a
+            <Link
               type="button"
               className="control-btn"
+              to="/howitworks"
               onClick={updateExpanedMenu}
             >
-              How It Works
-            </a>
-            <a
+              How it Works
+            </Link>
+            <Link
               type="button"
               className="control-btn"
+              to="/contact"
               onClick={updateExpanedMenu}
             >
               Contact
-            </a>
+            </Link>
             <a
               type="button"
               className="control-btn"
               href="https://app.prepaire.com:5067/#/login"
             >
-              Login
+              Log in
               <img src={Enter} alt="enter" />
             </a>
           </div>
@@ -154,6 +156,6 @@ export default function ContextBar() {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 }

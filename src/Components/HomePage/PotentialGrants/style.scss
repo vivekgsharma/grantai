@@ -1,22 +1,40 @@
 .potential-grants-outter-container {
   display: flex;
   justify-content: center;
+  margin-top: 57px;
+  @media (max-width: 1439px) {
+    margin-top: 153px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 9px;
+  }
+  @media (max-width: 767px) {
+    padding: 24px 16px;
+    margin-top: -33px;
+  }
+  @media (max-width: 479px) {
+    margin-top: -14px;
+  }
   .potential-grants {
     display: flex;
-    max-width: 1024px;
+    max-width: 1200px;
+    width: 100%;
     padding: 60px 0px 40px 0px;
-    gap: 80px;
     display: flex;
     align-items: center;
     gap: 120px;
     align-self: stretch;
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       gap: 64px;
+      max-width: 942px;
     }
     @media (max-width: 1024px) {
       display: flex;
       flex-direction: column-reverse;
       gap: 48px;
+    }
+    @media (max-width: 767px) {
+      gap: 24px;
     }
     .grant-chat-example-container {
       display: flex;
@@ -39,30 +57,163 @@
       @media (max-width: 580px) {
         width: 90%;
       }
-      @media (max-width: 480px) {
+      @media (max-width: 479px) {
         width: 100%;
       }
-      .grant-chat-example-1 {
+      .grant-chat-example-1-outter-container {
+        width: 100%;
         display: flex;
         justify-content: flex-start;
-        @media (max-width: 480px) {
+        @media (max-width: 479px) {
           justify-content: center;
         }
-        img {
-          @media (max-width: 480px) {
-            width: 80%;
-          }
+      }
+      .grant-chat-example-2-outter-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 479px) {
+          justify-content: center;
+        }
+      }
+      .grant-chat-example-1 {
+        border-radius: 5.136px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2.568px 20.543px 0px rgba(0, 0, 0, 0.06);
+        width: 359.775px;
+        height: fit-content;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 12px 15px;
+        position: relative;
+        @media (max-width: 479px) {
+          width: 100%;
+          justify-content: center;
+        }
+        .avatar {
+          width: 37.256px;
+          height: 37.256px;
+          flex-shrink: 0;
+        }
+        p {
+          color: #2b2b2b;
+          font-family: Inter;
+          font-size: 12.419px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 19.013px; /* 153.102% */
+          letter-spacing: -0.248px;
         }
       }
       .grant-chat-example-2 {
+        border-radius: 5.136px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2.568px 20.543px 0px rgba(0, 0, 0, 0.06);
+        width: 358px;
+        height: fit-content;
+        flex-shrink: 0;
         display: flex;
-        justify-content: flex-end;
-        @media (max-width: 480px) {
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 15px 15px 28px 15px;
+        @media (max-width: 767px) {
+          padding: 15px 15px 8px 15px;
+        }
+        @media (max-width: 479px) {
+          width: 90%;
           justify-content: center;
         }
         img {
-          @media (max-width: 480px) {
-            width: 80%;
+          width: 37px;
+          height: 37px;
+        }
+        .grantai-response-example-container {
+          display: flex;
+          gap: 8.75px;
+          flex-direction: column;
+          width: "calc(100%-30px-10px-37px)";
+          p {
+            color: #2b2b2b;
+            font-family: Inter;
+            font-size: 12.419px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19.013px; /* 153.102% */
+            letter-spacing: -0.248px;
+          }
+          .grant-cards-example-container {
+            display: flex;
+            flex-direction: column;
+            gap: 7.5px;
+            .grant-card {
+              padding: 16.041px 10.349px;
+              border-radius: 6.338px;
+              border: 0.792px solid rgba(0, 0, 0, 0.1);
+              background: var(--white-100, #fff);
+              box-shadow: 0px 3.169px 25.351px 0px rgba(0, 0, 0, 0.06);
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              max-width: 290px;
+              .icon-wrapper {
+                display: flex;
+                min-width: 65px;
+                min-height: 65px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7.042px;
+                border: 0.88px solid rgba(0, 0, 0, 0.1);
+                background: var(--white-100, #fff);
+                box-shadow: 0px 3.169px 3.169px 0px rgba(5, 21, 30, 0.04);
+                img {
+                  width: 50.173px;
+                  height: 43.132px;
+                  flex-shrink: 0;
+                }
+              }
+              .eha-wrapper {
+                img {
+                  height: 30px;
+                }
+              }
+              .card-contents {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6.338px;
+                .title {
+                  color: #2e2e2e;
+                  text-align: start;
+                  font-family: Inter;
+                  font-size: 12.675px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 15.844px; /* 125% */
+                }
+                .description {
+                  color: rgba(46, 46, 46, 0.8);
+                  text-align: start;
+                  font-family: Inter;
+                  font-size: 11.091px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 15.844px; /* 142.857% */
+                }
+                .price {
+                  color: var(--highlight, #72c420);
+                  text-align: start;
+                  font-family: Inter;
+                  font-size: 12.419px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 15.844px; /* 127.585% */
+                  letter-spacing: -0.248px;
+                }
+              }
+            }
           }
         }
       }
@@ -74,29 +225,45 @@
       align-items: flex-start;
       gap: 32px;
       @media (max-width: 1024px) {
-        width: 75%;
         align-items: center;
+        width: 79%;
+        padding: 0px 40px;
+      }
+      @media (max-width: 767px) {
+        padding: 0px 16px;
+        width: calc(100% - 32px);
+        gap: 24px;
       }
       .title {
-        color: #2b2b2b;
-        font-family: Inter;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 52px; /* 108.333% */
-        letter-spacing: -2.4px;
-        span {
-          color: var(--Green, #72c420);
+        @media (max-width: 767px) {
+          color: #2b2b2b;
+          text-align: center;
+          font-family: Inter;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px; /* 120% */
+          letter-spacing: -2px;
+        }
+        @media (max-width: 479px) {
+          font-family: Inter;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: -1.6px;
         }
       }
       .description {
-        color: #2e2e2e;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px; /* 175% */
-        letter-spacing: -0.32px;
+        @media (max-width: 767px) {
+          color: #2e2e2e;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 171.429% */
+          letter-spacing: -0.28px;
+        }
       }
     }
   }

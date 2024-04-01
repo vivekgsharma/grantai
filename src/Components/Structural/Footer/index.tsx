@@ -4,24 +4,24 @@ import "./style.scss";
 
 export default function Footer() {
   return (
-    <div className="footer-container">
-      <img src={ByPrepaire} alt="logo" />
+    <footer className="footer-container">
+      <img src={ByPrepaire} alt="by-prepaire-logo" />
       <div className="footer-contents-container">
-        <div className="address">
+        <nav className="company">
+          <p>Company</p>
+          <a href="https://www.prepaire.com/developers">Developers</a>
+          <a href="https://www.prepaire.com/Mission">Mission</a>
+          <a href="https://www.prepaire.com/biotune">Biotune</a>
+        </nav>
+        <address className="address">
           <div className="title">Address</div>
           <div className="address-contents">
             <p>Prepaire Global Holdings</p>
             <p>IRENA Building - Masdar City - Abu Dhabi</p>
             <p>United Arab Emirates</p>
           </div>
-        </div>
-        <div className="company">
-          <p>Company</p>
-          <a href="https://www.prepaire.com/developers">Developers</a>
-          <a href="https://www.prepaire.com/Mission">Mission</a>
-          <a href="https://www.prepaire.com/biotune">Biotune</a>
-        </div>
-        <div className="contact">
+        </address>
+        <nav className="contact">
           <p>Contact</p>
           <a
             onClick={() => (window.location.href = "mailto:sales@prepaire.com")}
@@ -42,8 +42,8 @@ export default function Footer() {
           >
             investors@prepaire.com
           </a>
-        </div>
+        </nav>
       </div>
-    </div>
+    </footer>
   );
 }

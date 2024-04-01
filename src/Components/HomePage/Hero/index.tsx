@@ -12,25 +12,22 @@ export default function Hero() {
     }
   }, []);
   return (
-    <div className="hero-container">
+    <section className="hero-container">
       <div className="background-img-container">
         <video muted autoPlay={true} loop={true} playsInline>
-          <source
-            src="https://firebasestorage.googleapis.com/v0/b/dicalmiami-49715.appspot.com/o/genetiq%2FWhatsApp%20Video%202024-03-26%20at%2009.45.12.mp4?alt=media&token=bca877d5-746c-4958-a0c1-f8ed771ddd80"
-            type="video/mp4"
-          />
+          <source src={HeroAnimation} type="video/mp4" />
         </video>
         <div className="get-started-container">
-          <p className="title">
-            We will Grant your wishes. <span>Literally</span>.
-          </p>
-          <p className="description">
+          <h1 className="title">
+            We will Grant your wishes. <strong>Literally</strong>.
+          </h1>
+          <h4 className="description">
             When it comes to fulfilling your project funding wishes,
-            <span> GrantAI</span> ensures they become a reality.
-          </p>
+            <strong> GrantAI</strong> ensures they become a reality.
+          </h4>
           <div className="button-container">
             <a
-              href="https://app.prepaire.com:5067/#/signup"
+              href="https://app.prepaire.com:5067/#/wishlist"
               className="action-button"
             >
               Get Started
@@ -42,6 +39,6 @@ export default function Hero() {
         </div>
         <img src={ByPrepaire} alt="logo" className="by-prepaire-logo" />
       </div>
-    </div>
+    </section>
   );
 }

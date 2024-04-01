@@ -1,5 +1,5 @@
 .bottom-bar-container {
-  padding: 0px 60px;
+  padding: 0px 40px;
   align-self: stretch;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background: var(--White, #fff);
@@ -43,13 +43,9 @@
       line-height: 20px; /* 125% */
     }
   }
-  .copyright {
-    color: var(--Black, #2e2e2e);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 125% */
-    text-align: center;
+  h4 {
+    @media (max-width: 479px) {
+      text-align: center;
+    }
   }
 }

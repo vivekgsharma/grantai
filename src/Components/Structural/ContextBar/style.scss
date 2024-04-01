@@ -1,7 +1,7 @@
 .context-bar {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
 
@@ -9,7 +9,7 @@
   box-shadow: 0px 4px 4px 0px rgba(5, 21, 30, 0.04);
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 12;
   top: 0px;
   transition: top 0.2s;
   .context-bar-inner-container {
@@ -17,9 +17,17 @@
     padding: 12px 60px;
     justify-content: space-between;
     align-items: center;
+    height: 48px;
 
+    @media (max-width: 1439px) {
+      padding: 12px 40px;
+    }
     @media (max-width: 1024px) {
-      padding: 21px 16px;
+      padding: 12px 24px;
+      height: fit-content;
+    }
+    @media (max-width: 767px) {
+      padding: 12px 16px;
     }
     .logo-container {
       display: flex;
@@ -127,7 +135,7 @@
       align-items: center;
       gap: 40px;
       align-self: stretch;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         flex-direction: column;
         gap: 16px;
       }

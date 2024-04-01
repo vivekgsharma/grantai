@@ -1,15 +1,7 @@
 {
   "name": "grantai-landing",
-  "version": "0.1.4",
+  "version": "0.2.3",
   "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build:prod": "BUILD_PATH='./build-prod' CI='false' env-cmd -f .devops/env/vars/dotfiles/prod.env react-scripts build",
-    "build:stage": "BUILD_PATH='./build-stage' CI='false' env-cmd -f .devops/env/vars/dotfiles/stage.env react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "dependencies": {
     "@mui/material": "^5.15.13",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,6 +11,7 @@
     "@types/node": "^16.18.88",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
+    "@types/react-snapshot": "^1.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
@@ -27,6 +20,15 @@
     "sass": "^1.69.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:prod": "BUILD_PATH='./build-prod' CI='false' env-cmd -f .devops/env/vars/dotfiles/prod.env react-scripts build",
+    "build:stage": "BUILD_PATH='./build-stage' CI='false' env-cmd -f .devops/env/vars/dotfiles/stage.env react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react-snap": "^1.23.0",
     "env-cmd": "^10.1.0"
   }
 }

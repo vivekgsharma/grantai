@@ -11,9 +11,9 @@ export default function Contact() {
   return (
     <div className="contacts-container">
       <div className="contact-us-container">
-        <p>
-          Contact <span>Us</span>
-        </p>
+        <h2>
+          Contact <strong>Us</strong>
+        </h2>
         <p>Get in touch and let us know how we can help</p>
         <div className="contact-btn-container">
           <a
@@ -39,18 +39,17 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className="contact-cards-container">
+      <section className="contact-cards-container">
         <div className="contact-card">
           <div className="contact-cardContent-container">
             <div className="contact-image-wrapper">
               <img alt="sales image" src={SalesContact}></img>
             </div>
-
             <h3>Sales</h3>
-            <p>
+            <h4>
               Interested in our platform? Reach out to our Sales team to learn
               how we can elevate your research.
-            </p>
+            </h4>
           </div>
           <button
             className="contact-regular-button"
@@ -75,11 +74,11 @@ export default function Contact() {
               <img alt="sales image" src={DeveloperContact}></img>
             </div>
 
-            <h3>Developer support</h3>
-            <p>
+            <h3>Developers</h3>
+            <h4>
               Developers, join us in shaping the future of personalized
               medicine. Contact us to explore opportunities.
-            </p>
+            </h4>
           </div>
           <button
             className="contact-regular-button"
@@ -107,10 +106,10 @@ export default function Contact() {
             </div>
 
             <h3>Media & investors</h3>
-            <p>
+            <h4>
               Media and investors, contact us for insights into our
               groundbreaking work in personalized medicine.
-            </p>
+            </h4>
           </div>
           <button
             className="contact-regular-button"
@@ -130,7 +129,7 @@ export default function Contact() {
             </svg>
           </button>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

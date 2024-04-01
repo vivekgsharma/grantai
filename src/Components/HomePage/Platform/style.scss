@@ -1,6 +1,16 @@
 .grantai-platform-outter-container {
   display: flex;
   justify-content: center;
+  margin-top: -68px;
+  @media (max-width: 1439px) {
+    margin-top: -25px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 25px;
+  }
+  @media (max-width: 479px) {
+    margin-top: 16px;
+  }
   .grantai-platform-container {
     border-radius: 16px;
     border: 12px solid #fff;
@@ -9,37 +19,38 @@
     /* Drop Shadow Cards */
     box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.06);
     display: flex;
-    width: 1097px;
+    width: 1141px;
     padding-left: 1px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 70px;
+    gap: 16px;
+    z-index: 1;
     img {
       width: 100%;
-      height: 804px;
+      height: 873px;
     }
-    @media (max-width: 1440px) {
-      width: 957px;
+    @media (max-width: 1439px) {
+      width: 944px;
       img {
-        height: 692px;
+        height: 710px;
       }
     }
     @media (max-width: 1024px) {
       width: 584px;
       margin-top: 199px;
       img {
-        height: 426px;
+        height: 435px;
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 447px;
       margin-top: 280px;
       img {
         height: 323px;
       }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 479px) {
       width: 287px;
       margin-top: 385px;
       img {
@@ -53,38 +64,59 @@
       flex-direction: column;
       align-items: center;
       gap: 32px;
+      @media (max-width: 1439px) {
+        gap: 27.95px;
+        margin-top: 30px;
+      }
       @media (max-width: 1024px) {
         width: 100%;
+        margin-top: 15px;
+        gap: 17.07px;
+      }
+      @media (max-width: 479px) {
+        margin-top: -7px;
+        gap: 12px;
       }
       .title {
-        color: #2e2e2e;
-        text-align: center;
-        font-family: Inter;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 52px; /* 108.333% */
-        letter-spacing: -2.4px;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px; /* 120% */
+          letter-spacing: -2px;
           width: 220px;
+          text-align: center;
         }
-        span {
-          color: #72c420;
+        @media (max-width: 479px) {
+          font-size: 32px;
+          width: 220px;
+          text-align: center;
+          line-height: 40px; /* 125% */
+          letter-spacing: -1.6px;
         }
       }
       .description {
         padding: 0px 80px;
-        color: #2e2e2e;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: -0.32px;
         @media (max-width: 1024px) {
           font-size: 14px;
           padding: 0px 40px;
+          color: #2e2e2e;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 128.571% */
+          letter-spacing: -0.28px;
+        }
+        @media (max-width: 479px) {
+          padding: 0px 16px;
+          color: #2e2e2e;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 128.571% */
+          letter-spacing: -0.28px;
         }
         span {
           font-weight: 700;
@@ -107,6 +139,9 @@
         line-height: 24px; /* 150% */
         &:hover {
           border: 1px solid var(--Black, #2e2e2e);
+        }
+        @media (max-width: 479px) {
+          height: 14px;
         }
       }
     }

@@ -23,23 +23,27 @@ export default function Howitworks() {
   };
   return (
     <div className="howitworks-container">
-      <h1 className="howitworks-title">
-        How GrantAI <span>works</span>
-      </h1>
-      <div className="howitworks-content">
-        <div className="howitworks-card" id="step-1">
-          <div className="howitworks-card-content">
-            <div className="step-label">
-              STEP <span>1</span>
+      <h2 className="howitworks-title">
+        How GrantAI <strong>Works</strong>
+      </h2>
+      <main className="howitworks-content">
+        <section className="howitworks-card" id="step-1">
+          <article className="howitworks-card-content">
+            <div className="step-title">
+              <h3 className="step-label">
+                <strong>
+                  Step <span>1</span>
+                </strong>
+              </h3>
+              <h2>Search for Grant</h2>
             </div>
-            <h2>Search for Grant</h2>
-            <p>
+            <h4>
               Start by meticulously searching for grants that best match your
               project or research needs. Utilize online databases, government
               websites, and industry publications to find opportunities that
               align with your objectives.
-            </p>
-          </div>
+            </h4>
+          </article>
           <div className="howitworks-card-cover">
             <div className="howitworks-card-cover-content">
               <div className="search-bar">
@@ -93,42 +97,51 @@ export default function Howitworks() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="howitworks-card" id="step-2">
+        </section>
+        <section className="howitworks-card" id="step-2">
           <div className="howitworks-first-cover-img">
             <img alt="Card1" src={Step2} />
           </div>
-          <div className="howitworks-card-content">
-            <div className="step-label">
-              STEP <span>2</span>
+          <article className="howitworks-card-content">
+            <div className="step-title">
+              <h3 className="step-label">
+                <strong>
+                  Step <span>2</span>
+                </strong>
+              </h3>
+              <h2>Review your Grant</h2>
             </div>
-            <h2>Review your Grant</h2>
-            <p>
+            <h4>
               Carefully read the grant guidelines to ensure your project fits
               within the scope. Check eligibility criteria such as organization
               type, project focus, and funding requirements to confirm that your
               proposal meets all necessary conditions.
-            </p>
-          </div>
-        </div>
-        <div className="howitworks-card" id="step-3">
-          <div className="howitworks-card-content">
-            <div className="step-label">
-              STEP <span>3</span>
+            </h4>
+          </article>
+        </section>
+        <section className="howitworks-card" id="step-3">
+          <article className="howitworks-card-content">
+            <div className="step-title">
+              <h3 className="step-label">
+                <strong>
+                  Step <span>3</span>
+                </strong>
+              </h3>
+              <h2>Write & Submit</h2>
             </div>
-            <h2>Write & Submit</h2>
-            <p>
-              Start by meticulously searching for grants that best match your
-              project or research needs. Utilize online databases, government
-              websites, and industry publications to find opportunities that
-              align with your objectives.
-            </p>
-          </div>
+            <h4>
+              Develop a detailed and persuasive grant proposal. This should
+              include a clear statement of your objectives, a comprehensive plan
+              of action, budget details, and any supporting documentation.
+              Ensure that your proposal is thorough, well-organized, and
+              submitted before the deadline.
+            </h4>
+          </article>
           <div className="howitworks-second-cover-img">
             <img alt="Card1" src={Step3} />
           </div>
-        </div>
-        <div className="howitworks-card" id="step-4">
+        </section>
+        <section className="howitworks-card" id="step-4">
           <div className="howitworks-third-card-cover">
             <div className="howitworks-third-sub-card-container">
               <div className="third-card-left-panel">
@@ -227,20 +240,24 @@ export default function Howitworks() {
               </button>
             </div>
           </div>
-          <div className="howitworks-card-content">
-            <div className="step-label">
-              STEP <span>4</span>
+          <article className="howitworks-card-content">
+            <div className="step-title">
+              <h3 className="step-label">
+                <strong>
+                  Step <span>4</span>
+                </strong>
+              </h3>
+              <h2>Monitor your Grant</h2>
             </div>
-            <h2>Monitor your Grant</h2>
-            <p>
-              Carefully read the grant guidelines to ensure your project fits
-              within the scope. Check eligibility criteria such as organization
-              type, project focus, and funding requirements to confirm that your
-              proposal meets all necessary conditions.
-            </p>
-          </div>
-        </div>
-      </div>
+            <h4>
+              After submission, actively monitor the status of your application.
+              Be prepared to provide additional information if requested by the
+              grantor. Stay informed about the review process and be ready for
+              any next steps post-decision.
+            </h4>
+          </article>
+        </section>
+      </main>
     </div>
   );
 }

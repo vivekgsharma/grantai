@@ -1,11 +1,12 @@
 .GrantAnimation-outter-container {
   display: flex;
   justify-content: center;
-  @media (max-width: 768px) {
+  margin-top: 30px;
+  @media (max-width: 767px) {
     margin-top: 40px;
   }
-  @media (max-width: 480px) {
-    margin-top: 10px;
+  @media (max-width: 479px) {
+    margin-top: 50px;
   }
   .GrantAnimation-container {
     display: flex;
@@ -16,8 +17,19 @@
     video {
       width: 100%;
       border-radius: 60px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
       &:focus {
         outline: none;
+      }
+      @media (max-width: 1439px) {
+        height: 511px;
+      }
+      @media (max-width: 767px) {
+        height: 279px;
+      }
+      @media (max-width: 479px) {
+        height: 200px;
       }
     }
     .navigation-button-container {
@@ -27,26 +39,22 @@
       gap: 40px;
       align-self: stretch;
       margin-top: 44px;
-      @media (max-width: 1024px) {
+      @media (max-width: 1439px) {
+        margin-top: 4px;
         gap: 24px;
       }
-      p {
-        color: var(--Black, #2e2e2e);
-        text-align: center;
-        font-family: Inter;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 52px; /* 108.333% */
-        letter-spacing: -2.4px;
+      @media (max-width: 479px) {
+        gap: 12px;
+      }
+      h2 {
         @media (max-width: 1024px) {
           font-size: 40px;
         }
-        @media (max-width: 480px) {
+        @media (max-width: 479px) {
           font-size: 32px;
-        }
-        span {
-          color: var(--Green, #72c420);
+          line-height: 40px; /* 125% */
+          letter-spacing: -1.6px;
+          text-align: center;
         }
       }
       .action-button {

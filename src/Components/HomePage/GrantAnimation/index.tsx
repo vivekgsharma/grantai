@@ -10,12 +10,12 @@ export default function GrantAnimation() {
           <source src={GrantVideo} type="video/mp4" />
         </video>
         <div className="navigation-button-container">
-          <p>
-            Let us <span>Grant</span> your wishes
-          </p>
+          <h2>
+            Let us <strong>Grant</strong> your wishes
+          </h2>
           <a
             className="action-button"
-            href="https://app.prepaire.com:5067/#/signup"
+            href="https://app.prepaire.com:5067/#/wishlist"
           >
             Get Started
           </a>

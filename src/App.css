@@ -1,4 +1,4 @@
-button{
+button {
   cursor: pointer;
 }
 a {
@@ -9,7 +9,54 @@ p {
   padding: 0px;
   margin: 0px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0px;
   margin: 0px;
+}
+
+h1 {
+  color: #2e2e2e;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 112.5% */
+  letter-spacing: -3.2px;
+}
+h2 {
+  color: #2e2e2e;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+  letter-spacing: -2.4px;
+}
+h3 {
+  color: #2b2b2b;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 100% */
+  letter-spacing: -0.8px;
+  text-align: start;
+}
+h4 {
+  color: #2e2e2e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  letter-spacing: -0.32px;
+}
+strong {
+  color: #72c420;
 }
