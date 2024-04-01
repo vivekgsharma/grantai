@@ -1,12 +1,14 @@
 import React from "react";
-import GrantAiPlatform from "assets/img/grantai-platform.png";
+import PlatformAnimation from "assets/animation/platform.mp4";
 import "./style.scss";
 
 export default function Platform() {
   return (
     <section className="grantai-platform-outter-container" id="platform">
       <div className="grantai-platform-container">
-        <img src={GrantAiPlatform} alt="grantai-platform-example" />
+        <video muted autoPlay={true} loop={true} playsInline>
+          <source src={PlatformAnimation} type="video/mp4" />
+        </video>
         <div className="platform-description">
           <h2 className="title">
             The GrantAI <strong>Platform</strong>
