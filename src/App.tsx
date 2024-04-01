@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import HowitworksPage from "pages/Howitworks";
 import Contact from "pages/Contact";
+import WaitlistPage from "pages/WaitList";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/howitworks" element={<HowitworksPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/wishlist" element={<WaitlistPage />} />
       </Routes>
       <Footer />
       <BottomBar />

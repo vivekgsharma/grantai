@@ -60,3 +60,32 @@ h4 {
 strong {
   color: #72c420;
 }
+
+.error-message {
+  /* Paragraph/Small/Regular */
+
+  display: flex;
+  padding: 4px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: #ffe1e1;
+  text-align: left;
+  width: fit-content;
+
+  span {
+    color: #ef4444;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+}
+.input-wrapper-error {
+  border: 1px solid #ef4444 !important;
+}
+.hidden {
+  display: none;
+}

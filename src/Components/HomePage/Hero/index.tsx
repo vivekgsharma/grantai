@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import ByPrepaire from "assets/img/byPrepaire.png";
 import HeroAnimation from "assets/animation/hero.mp4";
 import "./style.scss";
@@ -26,15 +27,12 @@ export default function Hero() {
             <strong> GrantAI</strong> ensures they become a reality.
           </h4>
           <div className="button-container">
-            <a
-              href="https://app.prepaire.com:5067/#/wishlist"
-              className="action-button"
-            >
+            <Link to="/wishlist" className="action-button">
               Get Started
-            </a>
-            <a className="action-button" href="/howitworks">
+            </Link>
+            <Link className="action-button" to="/howitworks">
               How It Works
-            </a>
+            </Link>
           </div>
         </div>
         <img src={ByPrepaire} alt="logo" className="by-prepaire-logo" />
