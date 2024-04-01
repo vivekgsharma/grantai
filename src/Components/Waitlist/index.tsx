@@ -57,9 +57,9 @@ export default function WaitList() {
       try {
         const postData = {
           email: Cemail,
-          phone: Cphone,
           waitlist_id: 15072,
         };
+        if (Cphone !== "") postData["phone"] = Cphone;
         const apiUrl = "https://api.getwaitlist.com/api/v1/signup";
         const response = await fetch(apiUrl, {
           method: "POST",
