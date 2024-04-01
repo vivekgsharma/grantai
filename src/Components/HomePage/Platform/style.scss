@@ -29,9 +29,11 @@
     align-items: center;
     gap: 16px;
     z-index: 1;
-    overflow: hidden;
+    .video-wrapper {
+      overflow: hidden;
+    }
     video {
-      width: calc(100% + 1px);
+      width: 101%;
       height: fit-content;
     }
     @media (max-width: 1439px) {

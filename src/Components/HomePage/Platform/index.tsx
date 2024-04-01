@@ -6,9 +6,11 @@ export default function Platform() {
   return (
     <section className="grantai-platform-outter-container" id="platform">
       <div className="grantai-platform-container">
-        <video muted autoPlay={true} loop={true} playsInline>
-          <source src={PlatformAnimation} type="video/mp4" />
-        </video>
+        <div className="video-wrapper">
+          <video muted autoPlay={true} loop={true} playsInline>
+            <source src={PlatformAnimation} type="video/mp4" />
+          </video>
+        </div>
         <div className="platform-description">
           <h2 className="title">
             The GrantAI <strong>Platform</strong>
