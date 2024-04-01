@@ -6,10 +6,13 @@
     margin-top: -25px;
   }
   @media (max-width: 1024px) {
-    margin-top: 25px;
+    margin-top: 224px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 305px;
   }
   @media (max-width: 479px) {
-    margin-top: 16px;
+    margin-top: 401px;
   }
   .grantai-platform-container {
     border-radius: 16px;
@@ -38,21 +41,18 @@
     }
     @media (max-width: 1024px) {
       width: 584px;
-      margin-top: 199px;
       img {
         height: 435px;
       }
     }
     @media (max-width: 767px) {
       width: 447px;
-      margin-top: 280px;
       img {
         height: 323px;
       }
     }
     @media (max-width: 479px) {
       width: 287px;
-      margin-top: 385px;
       img {
         height: 278px;
       }
