@@ -76,11 +76,7 @@ export default function ContextBar() {
           >
             Contact
           </Link>
-          <Link
-            // href="https://app.prepaire.com:5067/#/login"
-            to="/wishist"
-            className="control-btn"
-          >
+          <Link to="/wishlist" className="control-btn">
             Log in
             <img src={Enter} alt="Enter icon" />
           </Link>
