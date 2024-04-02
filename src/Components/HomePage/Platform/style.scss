@@ -34,7 +34,7 @@
     }
     video {
       width: 101%;
-      height: fit-content;
+      // height: fit-content;
     }
     @media (max-width: 1439px) {
       width: 944px;
@@ -46,7 +46,9 @@
       width: 447px;
     }
     @media (max-width: 479px) {
-      width: 287px;
+      width: 100%;
+      margin-left: 16px;
+      margin-right: 16px;
     }
     .platform-description {
       display: flex;

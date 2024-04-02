@@ -76,13 +76,14 @@ export default function ContextBar() {
           >
             Contact
           </Link>
-          <a
-            href="https://app.prepaire.com:5067/#/login"
+          <Link
+            // href="https://app.prepaire.com:5067/#/login"
+            to="/wishist"
             className="control-btn"
           >
             Log in
             <img src={Enter} alt="Enter icon" />
-          </a>
+          </Link>
         </div>
         <button type="button" className="menu-btn" onClick={updateExpanedMenu}>
           {showExpanedMenu ? (
@@ -119,14 +120,15 @@ export default function ContextBar() {
             >
               Contact
             </Link>
-            <a
+            <Link
               type="button"
               className="control-btn"
-              href="https://app.prepaire.com:5067/#/login"
+              to="/wishlist"
+              onClick={updateExpanedMenu}
             >
               Log in
               <img src={Enter} alt="enter" />
-            </a>
+            </Link>
           </div>
           <div className="bottom-contents">
             <div className="social-btns-container">

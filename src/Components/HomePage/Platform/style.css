@@ -1,0 +1,170 @@
+.grantai-platform-outter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -68px;
+}
+@media (max-width: 1439px) {
+  .grantai-platform-outter-container {
+    margin-top: -25px;
+  }
+}
+@media (max-width: 1024px) {
+  .grantai-platform-outter-container {
+    margin-top: 224px;
+  }
+}
+@media (max-width: 767px) {
+  .grantai-platform-outter-container {
+    margin-top: 305px;
+  }
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container {
+    margin-top: 401px;
+  }
+}
+.grantai-platform-outter-container .grantai-platform-container {
+  border-radius: 16px;
+  border: 12px solid #fff;
+  background: #fff;
+  /* Drop Shadow Cards */
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  width: 1141px;
+  padding-left: 1px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+.grantai-platform-outter-container .grantai-platform-container .video-wrapper {
+  overflow: hidden;
+}
+.grantai-platform-outter-container .grantai-platform-container video {
+  width: 101%;
+}
+@media (max-width: 1439px) {
+  .grantai-platform-outter-container .grantai-platform-container {
+    width: 944px;
+  }
+}
+@media (max-width: 1024px) {
+  .grantai-platform-outter-container .grantai-platform-container {
+    width: 584px;
+  }
+}
+@media (max-width: 767px) {
+  .grantai-platform-outter-container .grantai-platform-container {
+    width: 447px;
+  }
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container .grantai-platform-container {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.grantai-platform-outter-container .grantai-platform-container .platform-description {
+  display: flex;
+  width: 945px;
+  padding-bottom: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 1439px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description {
+    gap: 27.95px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description {
+    width: 100%;
+    margin-top: 15px;
+    gap: 17.07px;
+  }
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description {
+    margin-top: -7px;
+    gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description .title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -2px;
+    width: 220px;
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description .title {
+    font-size: 32px;
+    width: 220px;
+    text-align: center;
+    line-height: 40px; /* 125% */
+    letter-spacing: -1.6px;
+  }
+}
+.grantai-platform-outter-container .grantai-platform-container .platform-description .description {
+  padding: 0px 80px;
+}
+@media (max-width: 1024px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description .description {
+    font-size: 14px;
+    padding: 0px 40px;
+    color: #2e2e2e;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+  }
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description .description {
+    padding: 0px 16px;
+    color: #2e2e2e;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+  }
+}
+.grantai-platform-outter-container .grantai-platform-container .platform-description .description span {
+  font-weight: 700;
+}
+.grantai-platform-outter-container .grantai-platform-container .platform-description .action-button {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  color: #2e2e2e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.grantai-platform-outter-container .grantai-platform-container .platform-description .action-button:hover {
+  border: 1px solid var(--Black, #2e2e2e);
+}
+@media (max-width: 479px) {
+  .grantai-platform-outter-container .grantai-platform-container .platform-description .action-button {
+    height: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

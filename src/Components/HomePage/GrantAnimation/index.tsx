@@ -1,6 +1,7 @@
 import React from "react";
 import GrantVideo from "assets/animation/grant.mp4";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 export default function GrantAnimation() {
   return (
@@ -13,12 +14,9 @@ export default function GrantAnimation() {
           <h2>
             Let us <strong>Grant</strong> your wishes
           </h2>
-          <a
-            className="action-button"
-            href="https://app.prepaire.com:5067/#/wishlist"
-          >
+          <Link className="action-button" to="/wishlist">
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </div>
