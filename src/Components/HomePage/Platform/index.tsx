@@ -1,5 +1,6 @@
 import React from "react";
 import PlatformAnimation from "assets/animation/platform.mp4";
+import TextLogo from "assets/svg/textLogo.svg";
 import "./style.scss";
 
 export default function Platform() {
@@ -13,7 +14,10 @@ export default function Platform() {
         </div>
         <div className="platform-description">
           <h2 className="title">
-            The GrantAI <strong>Platform</strong>
+            <label>
+              The <img src={TextLogo} alt="text logo" />
+            </label>{" "}
+            <strong>Platform</strong>
           </h2>
           <h4 className="description">
             <span>GrantAI</span> enables you to effortlessly connect your

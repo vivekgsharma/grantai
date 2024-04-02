@@ -80,6 +80,9 @@
         padding: 12px;
         align-items: center;
         gap: 8px;
+        &:focus {
+          outline: none;
+        }
         &:hover {
           border: 1px solid var(--Black, #2e2e2e);
         }
@@ -90,6 +93,9 @@
       background: #fff;
       border: 1px solid #fff;
       padding: 0px;
+      &:focus {
+        outline: none;
+      }
     }
     @media (max-width: 1024px) {
       .menu-btn {
@@ -127,6 +133,9 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         background: #fff;
         line-height: 24px;
+        &:focus {
+          outline: none;
+        }
       }
     }
     .bottom-contents {

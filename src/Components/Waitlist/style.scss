@@ -32,7 +32,17 @@
     align-items: flex-start;
     gap: 32px;
     width: 80%;
-    img {
+    h2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+      img {
+        width: 164px;
+        height: 47px;
+      }
+    }
+    .waitlist-background {
       width: 100%;
     }
     .description {

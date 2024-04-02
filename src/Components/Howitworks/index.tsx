@@ -14,6 +14,7 @@ import SecondImage10 from "assets/img/image10-2.png";
 import SecondImage12 from "assets/img/image12-2.png";
 import Send from "assets/svg/send.svg";
 import Search from "assets/svg/search.svg";
+import TextLogo from "assets/svg/textLogo.svg";
 
 export default function Howitworks() {
   const navigate = useNavigate();
@@ -24,7 +25,10 @@ export default function Howitworks() {
   return (
     <div className="howitworks-container">
       <h2 className="howitworks-title">
-        How GrantAI <strong>Works</strong>
+        <label>
+          How <img src={TextLogo} alt="grantai text logo" />
+        </label>
+        <strong>Works</strong>
       </h2>
       <main className="howitworks-content">
         <section className="howitworks-card" id="step-1">

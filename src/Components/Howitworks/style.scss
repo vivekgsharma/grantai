@@ -12,7 +12,24 @@
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  img {
+    width: 155px;
+    height: 51px;
+  }
   @media (max-width: 1024px) {
+    img {
+      width: 104px;
+      height: 38px;
+    }
     font-size: 32px;
     line-height: 40px; /* 125% */
     letter-spacing: -1.6px;

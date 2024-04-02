@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import waitlistbackground from "assets/img/waitlist-background.png";
 import Whatsapp from "assets/svg/whatsapp.svg";
+import TextLogo from "assets/svg/textLogo.svg";
 import Tg from "assets/svg/tg.svg";
 import "./style.scss";
 
@@ -88,9 +89,13 @@ export default function WaitList() {
     <div className="waitlist-outter-container">
       <div className="waitlist-container">
         <h2>
-          Welcome to <strong>GrantAi</strong>
+          Welcome to <img src={TextLogo} alt="text logo" />
         </h2>
-        <img src={waitlistbackground} alt="waitlist background" />
+        <img
+          className="waitlist-background"
+          src={waitlistbackground}
+          alt="waitlist background"
+        />
         <p className="description">
           Gain instant access to a global database of grants and funds tailored
           to your project's needs. GrantAI's cutting-edge technology, Gemini
