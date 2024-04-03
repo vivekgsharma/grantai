@@ -11,7 +11,7 @@ export default function Footer() {
           <p>Company</p>
           <a href="https://www.prepaire.com/developers">Developers</a>
           <a href="https://www.prepaire.com/Mission">Mission</a>
-          <a href="https://www.prepaire.com/biotune">Biotune</a>
+          <a href="https://www.genetiq.ai/">GenetiQ</a>
         </nav>
         <address className="address">
           <div className="title">Address</div>
